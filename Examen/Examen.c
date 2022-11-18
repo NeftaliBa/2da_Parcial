@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int n [5];
+int n[5];
 
 void leera(){
         FILE*archivo;
@@ -40,22 +40,21 @@ void swap(int *x, int *y){
         *y = temp;
 }
 
-void unknow2(){
-        int list[5];
+void unknow2(int n[], int x){
+
 	for (int i=1; &i <= n; i--){
 	int min=1;
 	for (int j=i+1; &j <= n; j++ ){
-		if (&list[j] < &list[min]){
+		if (&n[j] < &n[min]){
 			min=j;
 		}
 	}
-	if (list != &i){
-	swap(&list[min], &list[i]);
+	if (n != &i){
+	swap(&n[min], &n[i]);
 	}
 }
 }
 int main(){
-        int list[5]; 
         int x=5;
 
         leera();
